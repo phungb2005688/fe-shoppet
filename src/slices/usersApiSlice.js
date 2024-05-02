@@ -1,5 +1,6 @@
 import { apiSlice } from './apiSlice';
-import { USERS_URL } from '../constants';
+
+const USERS_URL = `${process.env.REACT_APP_BACKEND_URL}/users`;
 
 export const userApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
